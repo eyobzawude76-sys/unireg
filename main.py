@@ -8,7 +8,6 @@ from fastapi.staticfiles import StaticFiles
 from bson import ObjectId
 import requests
 from pydantic import BaseModel
-
 app = FastAPI() 
 app.mount("/static", StaticFiles(directory="static"), name="static") 
 
@@ -21,7 +20,7 @@ app.add_middleware(
 )
 
 # 2. MongoDB Connection
-client = MongoClient("mongodb+srv://eyobzawude76_db_user:1357ab@#@cluster0.uo74prq.mongodb.net/?appName=Cluster0")
+client = MongoClient("mongodb+srv://eyobzawude76_db_user:1357ab%40%23@cluster0.uo74prq.mongodb.net/?appName=Cluster0")
 db = client["UniRegDB"]
 collection = db["students"]
 
