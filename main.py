@@ -156,7 +156,7 @@ async def get_students():
     try:
         students = []
         for student in collection.find():
-            student["_id"] = str(student["_id"])
+            student["_id"] = str(student["_id"]) 
             students.append(student)
         return students
     except Exception as e:
