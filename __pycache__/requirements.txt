@@ -1,4 +1,7 @@
 fastapi
 uvicorn
+pymongo
+python-multipart
+requests
 motor
 pydantic
